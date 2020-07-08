@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>(03 day)跳水板(diving board)</title>
+      <link href="/2020/07/08/03-day-%E8%B7%B3%E6%B0%B4%E6%9D%BF-diving-board/"/>
+      <url>/2020/07/08/03-day-%E8%B7%B3%E6%B0%B4%E6%9D%BF-diving-board/</url>
+      
+        <content type="html"><![CDATA[<h1 id="03-day-跳水板-divingBoard"><a href="#03-day-跳水板-divingBoard" class="headerlink" title="(03 day)跳水板(divingBoard)"></a>(03 day)跳水板(divingBoard)</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>你正在使用一堆木板建造跳水板。有两种类型的木板，其中长度较短的木板长度为shorter，长度较长的木板长度为longer。你必须正好使用k块木板。编写一个方法，生成跳水板所有可能的长度。</p><p>返回的长度需要从小到大排列。</p><p><strong>示例：</strong></p><pre><code class="c">输入：shorter = 1longer = 2k = 3输出： {3,4,5,6}</code></pre><p>这道题比较简单的。自然而然的想到直接全选最短板。然后一块长板替换一块短板，以此类推。所有就全选最短板 + k个最短板依次换成最长板 = k+1次计算。</p><p>时间复杂度：<em>O ( k + 1 )</em></p><p><strong>代码如下：</strong></p><pre><code class="c">int *divingBoard(int shorter, int longer, int k, int *returnSize){    int *ans;    int size, dvalue;    if (k == 0)    {        *returnSize = 0;        return NULL;    }    else if (shorter == longer)    {        size = 1;        ans = (int *)malloc(sizeof(int));        ans[0] = k * shorter;        *returnSize = size;        return ans;    }    else    {        size = k + 1;        ans = (int *)malloc((k + 1) * sizeof(int));        dvalue = longer - shorter;        ans[0] = shorter * k;        for (int i = 1; i &lt; size; i++)        {            ans[i] = ans[i - 1] + dvalue;        }        *returnSize = k + 1;        return ans;    }}</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> easy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>(02 day)路径求和(path sum)</title>
+      <link href="/2020/07/08/02-day-%E8%B7%AF%E5%BE%84%E6%B1%82%E5%92%8C-path-sum-1/"/>
+      <url>/2020/07/08/02-day-%E8%B7%AF%E5%BE%84%E6%B1%82%E5%92%8C-path-sum-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="02-day-路径求和-pathSum"><a href="#02-day-路径求和-pathSum" class="headerlink" title="(02 day)路径求和(pathSum)"></a>(02 day)路径求和(pathSum)</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。</p><p>说明: 叶子节点是指没有子节点的节点。</p><p>示例: 给定如下二叉树，以及目标和 sum = 22，</p><pre><code class="c">              5             / \            4   8           /   / \          11  13  4         /  \      \        7    2      1</code></pre><p>返回 true, 因为存在目标和为 22 的根节点到叶子节点的路径 5-&gt;4-&gt;11-&gt;2。</p><p>此处寻找符合条件的路径，可以理解是变量树然后查找其中符合条件的路径。</p><p><strong>方法一：</strong></p><p>递归遍历。使用先序遍历，每次遍历到一个结点就把结点数和上一个相加。符合递归的特性。</p><p>我平时写代码的时候总是不喜欢使用递归，总觉得递归嵌套进去占用内存多。不过现在感觉其实递归代码优美简洁还逻辑清晰，简直不要太猛。</p><p>算法复杂度：<br><em>O ( n )</em></p><p><code>代码如下：</code></p><pre><code class="c">bool hasPathSum(struct TreeNode *root, int sum){    if (root == NULL)    {        return false;    }    else if (root-&gt;left == NULL &amp;&amp; root-&gt;right == NULL)    {        return sum - root-&gt;val == 0;    }    sum -= root-&gt;val;    return hasPathSum(root-&gt;left, sum) || hasPathSum(root-&gt;right, sum);}</code></pre><p><strong>方法二：</strong></p><pre><code class="c">              5             / \            4   8           /   / \          11  13  4         /  \      \        7    2      1</code></pre><p>两个队列，一个存结点，一个存结点进入后的sum值。算法复杂度也是<em>O ( n )</em>如下：</p><table><thead><tr><th>queueNode：</th><th>5</th><th>4、8</th><th>8、11</th><th>11、13、4</th><th>13、4、7、2</th></tr></thead><tbody><tr><td>queueSum：</td><td>5</td><td>9、13</td><td>13、20</td><td>20、26、17</td><td>26、17、27、22(target)</td></tr></tbody></table><p>其实可以加上剪枝减少计算量。不过这个的算法我没写，如果之后想起来或者重新学到了二叉树的时候再补吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> easy </tag>
+            
+            <tag> BiTree </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>(01 day)二进制求和(Binary Sum)</title>
       <link href="/2020/06/25/01-day-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C-Binary-Sum/"/>
       <url>/2020/06/25/01-day-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C-Binary-Sum/</url>
