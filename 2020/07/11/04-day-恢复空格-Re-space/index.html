@@ -698,6 +698,8 @@ jesslookedjustliketimherbrother
 
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+<script src="md5.min.js"></script>
+
 <script>
     var gitalk = new Gitalk({
             clientID: 'c3f2f37a263e183af636',
@@ -705,6 +707,7 @@ jesslookedjustliketimherbrother
             repo: 'gitalk-commnet',
             owner: 'yangzhaohua1998',
             admin: ['yangzhaohua1998'],
+            id: md5(location.pathname),
             // facebook-like distraction free mode
             distractionFreeMode: false
         })
