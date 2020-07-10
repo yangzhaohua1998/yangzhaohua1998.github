@@ -557,7 +557,7 @@
 
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<script src="md5.min.js"></script>
+<script src="/js/md5.min.js"></script>
 
 <script>
     var gitalk = new Gitalk({
@@ -568,7 +568,7 @@
             admin: ['yangzhaohua1998'],
             id: md5(location.pathname),
             // facebook-like distraction free mode
-            distractionFreeMode: false
+            distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
         })
    gitalk.render('gitalk-container')
 </script>
