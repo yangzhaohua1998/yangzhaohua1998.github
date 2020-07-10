@@ -50,7 +50,7 @@
     
     <title>
         
-            归档: 2020/7 | 
+            (04 day)恢复空格(Re-space) | 
         
         机智的派大星
     </title>
@@ -61,7 +61,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",median,Trie,DP">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -88,6 +88,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -224,7 +227,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="机智的派大星">
-    <meta name="msapplication-starturl" content="http://yangzhaohua1998.github.io/archives/2020/07/">
+    <meta name="msapplication-starturl" content="http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="机智的派大星">
@@ -239,13 +242,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yangzhaohua1998.github.io/archives/2020/07/">
+    <meta property="og:url" content="http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2020/7 | 机智的派大星">
+    <meta property="og:title" content="(04 day)恢复空格(Re-space) | 机智的派大星">
     <meta property="og:image" content="/img/Y.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="median"> <meta property="og:article:tag" content="Trie"> <meta property="og:article:tag" content="DP"> 
 
+    
+        <meta property="article:published_time" content="Sat Jul 11 2020 00:31:00 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jul 11 2020 00:50:27 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -253,13 +259,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yangzhaohua1998.github.io/archives/2020/07/index.html" />
+        <link rel="canonical" href="http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html",
+    "headline": "(04 day)恢复空格(Re-space)",
+    "datePublished": "Sat Jul 11 2020 00:31:00 GMT+0800",
+    "dateModified": "Sat Jul 11 2020 00:50:27 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "smart Patrick star",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/my_avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "机智的派大星",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/Y.png"
+        }
+    },
+    "keywords": ",median,Trie,DP",
+    "description": "",
+}
+</script>
 
 
     
@@ -293,220 +329,421 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#04-day-恢复空格-Re-space"><span class="post-toc-number">1.</span> <span class="post-toc-text">(04 day)恢复空格(Re-space)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目描述"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">题目描述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解题思路"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">解题思路</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#源码"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">源码</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/">(04 day)恢复空格(Re-space)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/my_avatar.png" width="44px" height="44px" alt="smart Patrick star's avatar">
-            </div>
-            <div>
-                <strong>smart Patrick star</strong>
-                <span>7月 11, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/LeetCode/">LeetCode</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/08/03-day-%E8%B7%B3%E6%B0%B4%E6%9D%BF-diving-board/">(03 day)跳水板(diving board)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/08/03-day-%E8%B7%B3%E6%B0%B4%E6%9D%BF-diving-board/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/my_avatar.png" width="44px" height="44px" alt="smart Patrick star's avatar">
-            </div>
-            <div>
-                <strong>smart Patrick star</strong>
-                <span>7月 08, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/LeetCode/">LeetCode</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/08/02-day-%E8%B7%AF%E5%BE%84%E6%B1%82%E5%92%8C-path-sum/">(02 day)路径求和(path sum)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/08/02-day-%E8%B7%AF%E5%BE%84%E6%B1%82%E5%92%8C-path-sum/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/my_avatar.png" width="44px" height="44px" alt="smart Patrick star's avatar">
-            </div>
-            <div>
-                <strong>smart Patrick star</strong>
-                <span>7月 08, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/LeetCode/">LeetCode</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                (04 day)恢复空格(Re-space)
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/my_avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>smart Patrick star</strong>
+        <span>7月 11, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAELklEQVR42u3aS27bQBAFQN3/0snWQCLpvW7CEEfFlWHTw2Fx0b95/HEF1wMBJkyYMGHC5MKECROmj2d6xNd/Fvrx+/zOervBrv5d/9ne8nfEhAkTJkwnMSUbzYGe3Z9Qvl4nZ73gHTFhwoQJ03FMSbhNXuPZCgn36xC++Uj5O2LChAkTJkwtWYuS4M4SC0yYMGHChKl9TB7m25ZrDrHZPyZMmDBh+h6mpAE6o5ndM0sXZsNUTJgwYcJ0NlMemO/786+eb8KECRMmTB/DNDsWMwPNy9pNIzhPFN68KSZMmDBhOoIpD5yzcnQTpPPCOy/Xk0+FCRMmTJjOZmrTglka8bql266zH3bWU19MmDBhwnQrptf/nI8w8+Sgffom2OcJByZMmDBhOpWpDat58J4lE7MP0/5+WPpiwoQJE6YbMs0O6yTrtAlE8sTNp80/KiZMmDBhOo+pfVh+sCZv1OavNFun2CcmTJgwYTqIaVNwJsPFPMy3xW3bJs6P72DChAkTpjOYkvCZF435wZr2fzeB/4ImLyZMmDBhui1TPlbcHKZpE4JZ8zf/JMmFCRMmTJjOY0oCeRLyZ+3aqwaWbZP66f2YMGHChOkIprYA3rRcozDchu2ggZsX0pgwYcKE6Tym5B9eA23K2pYjH1u2lJgwYcKE6VSmPLRfO6qcrZ8PJmftaUyYMGHC9A1MeRncjkX36+SpSd6qfromJkyYMGE6jmkT2pPAnITzvEE821UBigkTJkyYjmBqD4BumsKb0en+COwFvXBMmDBhwnRDplmrd9Ya3tyf73nzFpgwYcKE6WymNtjnHPvDN+2dbbqDCRMmTJhOZUoCZBu22+FlkmQk48y2lfxmb5gwYcKE6SCmtgE6O0zTjiTbD5CnJtHHwIQJEyZMRzPlqUB0CCZep00priXDhAkTJkznMeVkSamZ/HWz2v6YTp76YMKECROm85jyLc5eIE8+8sFknjS0A1RMmDBhwnQG06yF2o4k21bv7OXb0eaqyYsJEyZMmG7LlA8mN0DJ1vNSeV9gDw/uYMKECROmI5iSwWQ7REzK5vxVZ4UxJkyYMGH6Bqa8JZofoNk0gtuQnx8GqlvGmDBhwoTpIKbZw9oV2tQhTz72uJgwYcKE6VSmq8aBbSqQQ7RrJk9JCmBMmDBhwnQGU3ttGrLR5sokYPbc6JNgwoQJE6YjmB7x1SK2I8mrmsj5+nXpiwkTJkyYbsvUJgF5wfy6iM2fdW0iMkwIMGHChAnTzZlmh2yStGDThM3HkI/yevPhMWHChAkTpsXWZ43jvNWbrP+rCQEmTJgwYboVUxva80MzbYnbfrBisIoJEyZMmI5jaoeUbfmat33bArgliP6KCRMmTJgOYmpbovmmN4V0PkydDUrrhAATJkyYMN2QyRUlBC5MmDBhwoQJkwsTJkyfcv0FZXScC7p2Ya8AAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/DP/" rel="tag">DP</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Trie/" rel="tag">Trie</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/median/" rel="tag">median</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/" class="leancloud-views_num" data-flag-title="(04 day)恢复空格(Re-space)">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=(04 day)恢复空格(Re-space)&url=http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html&pic=http://yangzhaohua1998.github.io/img/Y.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=(04 day)恢复空格(Re-space)&url=http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html&via=smart Patrick star" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=机智的派大星&title=(04 day)恢复空格(Re-space)&summary=&pics=http://yangzhaohua1998.github.io/img/Y.png&url=http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="04-day-恢复空格-Re-space"><a href="#04-day-恢复空格-Re-space" class="headerlink" title="(04 day)恢复空格(Re-space)"></a>(04 day)恢复空格(Re-space)</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>哦，不！你不小心把一个长篇文章中的空格、标点都删掉了，并且大写也弄成了小写。像句子”I reset the computer. It still didn’t boot!”已经变成了”iresetthecomputeritstilldidntboot”。在处理标点符号和大小写之前，你得先把它断成词语。当然了，你有一本厚厚的词典dictionary，不过，有些词没在词典里。假设文章用sentence表示，设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。</p>
+<p>注意：本题相对原题稍作改动，只需返回未识别的字符数</p>
+<p><strong>示例：</strong></p>
+<p>输入：<br>dictionary = [“looked”,”just”,”like”,”her”,”brother”]<br>sentence = “jesslookedjustliketimherbrother”<br>输出： 7<br>解释： 断句后为”jess looked just like tim her brother”，共7个未识别字符。</p>
+<p><strong>提示：</strong></p>
+<p>0 &lt;= len(sentence) &lt;= 1000<br>dictionary中总字符数不超过 150000。<br>你可以认为dictionary和sentence中只包含小写字母。</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>这道题和之前的单词拆分思路类似，不过之前的那道题时间不够，对动态规划也不熟。看了答案后知道了要使用动态规划和哈希表。但是自己做动态规划的时候总是没有很明确的思路，还需要加强。而哈希表、字典树等只是数据结构的工具，理解掌握还是不难。</p>
+<p>此题的解法思路如下图所示，图源<a href="[https:](https://leetcode-cn.com/problems/re-space-lcci/solution/hui-fu-kong-ge-by-leetcode-solution/)">leetcode</a></p>
+<p><img src="%5Cimages%5CRe-spaceTrie.gif%5C" alt="算法图示&lt;源于：LeetCode&gt;"></p>
+<p>看到这图我就有思路了。用字典树将字典单词存起来（反向插入），用sentence的长度+1的dp数组保存每个字符的状态。走到i时，令j = i,让sentence[j]字符进字典树进行查找，存在则j–，sentence[j]进字典树继续查找，不存在则break，然后i++。如果能够查到完整单词也就是sentence[j]的状态isEnd==true，比较dp[i]和bp[j-1]谁小。其实我最开始理解的是直接交换不久好了为啥还要比较一下。后来有个示例没过发现了原因。比如</p>
+<pre><code class="c">dictionary：abc，abcd，dfabc
+sentence：abcdfabc</code></pre>
+<p>到最后一位c时，dp是这样的</p>
+<pre><code class="c">     abcdfabc
+    01230123？</code></pre>
+<pre><code>此时进行字符匹配会先与abc匹配</code></pre><pre><code class="c">     abcdfabc
+    012301231</code></pre>
+<p>但是由于abc和dfabc存在公共子串abc，所以还会继续比较。如果没有fmin(dp[i], dp[j-1])，那么这种情况就是直接</p>
+<pre><code class="c">     abcdfabc
+    012301233</code></pre>
+<p>显然是不如abc匹配的结果。所以还是要加上fmin()进行比较的。</p>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><pre><code class="c">#include &lt;stdio.h&gt;
+#include &lt;malloc.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdbool.h&gt;
+
+/*
+    解题思路，动态规划+字典树。
+*/
+
+typedef struct Trie
+{
+    struct Trie *next[26];
+    bool isEnd;
+} Trie;
+
+bool init(Trie** T)
+{
+    *T = (Trie *)malloc(sizeof(Trie));
+    if (!T)
+    {
+        return false;
+    }
+    (*T)-&gt;isEnd = false;
+    memset((*T)-&gt;next, NULL, sizeof((*T)-&gt;next));
+    return true;
+}
+
+void insert(Trie *T, char *dic)
+{
+    int len = strlen(dic);
+    for (int i = len - 1; i &gt;= 0; i--)
+    {
+        int temp = dic[i] - &#39;a&#39;;
+        if (T-&gt;next[temp] == NULL)
+        {
+            init(&amp;(T-&gt;next[temp]));
+        }
+        T = T-&gt;next[temp];
+    }
+    T-&gt;isEnd = true;
+}
+
+int respace(char **dictionary, int dictionarySize, char *sentence)
+{
+    int n = strlen(sentence);
+    Trie* T;
+    init(&amp;T);
+    for (int i = 0; i &lt; dictionarySize; i++)
+    {
+        insert(T, dictionary[i]);
+    }
+    int dp[n + 1];
+    memset(dp, -1, sizeof(dp));
+    dp[0] = 0;
+    for (int i = 1; i &lt;= n; i++)
+    {
+        dp[i] = dp[i - 1] + 1;
+        Trie* dicT = T;
+        for (int j = i; j &gt; 0; j--)
+        {
+            int temp = sentence[j - 1] - &#39;a&#39;;
+            if (dicT-&gt;next[temp] == NULL)//不存在该单词，break
+            {
+                break;
+            }
+            else if (dicT-&gt;next[temp]-&gt;isEnd)//到一个单词尾，将dp[i]更新，但不停止，可能存在更长的单词
+            {
+                dp[i] = fmin(dp[i], dp[j-1]);
+            }
+            if (dp[i] == 0)//前面没有单独字符
+            {
+                break;
+            }
+            dicT = dicT-&gt;next[temp];
+        }
+    }
+    return dp[n];
+}
+
+int main()
+{
+    int ans, dictionarySize;
+    char** dictionary;
+    char sentence[1000];
+    //printf(&quot;请输入字典单词个数：\n&quot;);
+    scanf(&quot;%d&quot;, &amp;dictionarySize);
+    dictionary = (char**)malloc(dictionarySize * sizeof(char*));
+    for (int i = 0; i &lt; dictionarySize; i++)
+    {
+        dictionary[i] = (char*)malloc(100*sizeof(char));
+    }
+
+    //printf(&quot;请输入%d个字典单词：\n&quot;, dictionarySize);
+    for (int i = 0; i &lt; dictionarySize; i++)
+    {
+        scanf(&quot;%s&quot;, dictionary[i]);
+    }
+    //printf(&quot;请输入判断的句子：\n&quot;);
+    scanf(&quot;%s&quot;, sentence);
+    printf(&quot;sentence: %s\n&quot;, sentence);
+    printf(&quot;ans = %d\n&quot;, respace(dictionary, dictionarySize, sentence));
+    printf(&quot;输入的字典单词有：\n&quot;);
+    for (int i = 0; i &lt; dictionarySize; i++)
+    {
+        printf(&quot;%s\n&quot;, dictionary[i]);
+    }
+}
+/*
+test:
+
+5
+looked
+just
+like
+her
+brother
+jesslookedjustliketimherbrother
+*/</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 Gitalk -->
+<div id="gitalk-comment">
+    <!-- Gitalk 评论框 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script>
+    var gitalk = new Gitalk({
+            clientID: 'c3f2f37a263e183af636',
+            clientSecret: '7305f6d3845290c6d341887b9831620dbb4e416b',
+            repo: 'gitalk-commnet',
+            owner: 'yangzhaohua1998',
+            admin: ['yangzhaohua1998'],
+            // facebook-like distraction free mode
+            distractionFreeMode: false
+        })
+   gitalk.render('gitalk-container')
+</script>
+</div>
+<style>
+    #gitalk-comment {
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/07/08/03-day-%E8%B7%B3%E6%B0%B4%E6%9D%BF-diving-board/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -934,6 +1171,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
     
@@ -950,6 +1191,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
