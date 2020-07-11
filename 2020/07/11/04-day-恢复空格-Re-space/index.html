@@ -251,7 +251,7 @@
 
     
         <meta property="article:published_time" content="Sat Jul 11 2020 00:31:00 GMT+0800">
-        <meta property="article:modified_time" content="Sat Jul 11 2020 17:55:34 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jul 11 2020 18:03:52 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -274,7 +274,7 @@
     "mainEntityOfPage": "http://yangzhaohua1998.github.io/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/index.html",
     "headline": "(04 day)恢复空格(Re-space)",
     "datePublished": "Sat Jul 11 2020 00:31:00 GMT+0800",
-    "dateModified": "Sat Jul 11 2020 17:55:34 GMT+0800",
+    "dateModified": "Sat Jul 11 2020 18:03:52 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "smart Patrick star",
@@ -544,7 +544,6 @@
 <h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>这道题和之前的单词拆分思路类似，不过之前的那道题时间不够，对动态规划也不熟。看了答案后知道了要使用动态规划和哈希表。但是自己做动态规划的时候总是没有很明确的思路，还需要加强。而哈希表、字典树等只是数据结构的工具，理解掌握还是不难。</p>
 <p>此题的解法思路如下图所示，图源<a href="[https:](https://leetcode-cn.com/problems/re-space-lcci/solution/hui-fu-kong-ge-by-leetcode-solution/)">leetcode</a></p>
 <p><img src="/images/Re-space%E7%AE%97%E6%B3%95%E5%9B%BE%E7%A4%BA.gif" alt="算法图示&lt;源于：LeetCode&gt;"></p>
-<p><img src="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/Re-space%E7%AE%97%E6%B3%95%E5%9B%BE%E7%A4%BA.gif" alt="算法图示&lt;源于：LeetCode&gt;"></p>
 <p>看到这图我就有思路了。用字典树将字典单词存起来（反向插入），用sentence的长度+1的dp数组保存每个字符的状态。走到i时，令j = i,让sentence[j]字符进字典树进行查找，存在则j–，sentence[j]进字典树继续查找，不存在则break，然后i++。如果能够查到完整单词也就是sentence[j]的状态isEnd==true，比较dp[i]和bp[j-1]谁小。其实我最开始理解的是直接交换不久好了为啥还要比较一下。后来有个示例没过发现了原因。比如</p>
 <pre><code class="c">dictionary：abc，abcd，dfabc
 sentence：abcdfabc</code></pre>
