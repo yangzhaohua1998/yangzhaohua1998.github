@@ -50,7 +50,7 @@
     
     <title>
         
-            标签: median | 
+            LVM的学习与使用 | 
         
         机智的派大星
     </title>
@@ -61,7 +61,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Linux">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -88,6 +88,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -224,7 +227,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="机智的派大星">
-    <meta name="msapplication-starturl" content="http://yangzhaohua1998.github.io/tags/median/">
+    <meta name="msapplication-starturl" content="http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="机智的派大星">
@@ -239,13 +242,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yangzhaohua1998.github.io/tags/median/">
+    <meta property="og:url" content="http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: median | 机智的派大星">
+    <meta property="og:title" content="LVM的学习与使用 | 机智的派大星">
     <meta property="og:image" content="/img/Y.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="Linux"> 
 
+    
+        <meta property="article:published_time" content="Thu May 20 2021 16:54:49 GMT+0800">
+        <meta property="article:modified_time" content="Thu May 20 2021 20:00:51 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -253,13 +259,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yangzhaohua1998.github.io/tags/median/index.html" />
+        <link rel="canonical" href="http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html",
+    "headline": "LVM的学习与使用",
+    "datePublished": "Thu May 20 2021 16:54:49 GMT+0800",
+    "dateModified": "Thu May 20 2021 20:00:51 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "smart Patrick star",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/my_avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "机智的派大星",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/Y.png"
+        }
+    },
+    "keywords": ",Linux",
+    "description": "",
+}
+</script>
 
 
     
@@ -293,98 +329,325 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#LVM的学习与使用"><span class="post-toc-number">1.</span> <span class="post-toc-text">LVM的学习与使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#LVM的学习"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">LVM的学习</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#LVM基础知识"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">LVM基础知识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建LVM"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">创建LVM</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#删除LVM"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">删除LVM</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#LV的拉伸"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">LV的拉伸</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#VG的拉伸"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">VG的拉伸</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#LV的缩小"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">LV的缩小</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#VG的缩小"><span class="post-toc-number">1.1.7.</span> <span class="post-toc-text">VG的缩小</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前置知识"><span class="post-toc-number">1.1.7.1.</span> <span class="post-toc-text">前置知识</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#LVM的使用"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">LVM的使用</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/">(04 day)恢复空格(Re-space)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/my_avatar.png" width="44px" height="44px" alt="smart Patrick star's avatar">
-            </div>
-            <div>
-                <strong>smart Patrick star</strong>
-                <span>7月 11, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/LeetCode/">LeetCode</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                LVM的学习与使用
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/my_avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>smart Patrick star</strong>
+        <span>5月 20, 2021</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAEHUlEQVR42u3aO3LjMBAFQN//0rupE1vvzUAuCWpEKpomgWaA+eDrnxGMLwSYMGHChAmTgQkTJkwvz/QVj+/3//T7+5WfrudP3r93tkZMmDBhwnQf04Ot8YcpJtzJsvMFz+5v14gJEyZMmG5larfq2Wb8O24STMzuydeICRMmTJg+mSlZZHLlVLrbwmHChAkTJkyzgCDfts8WlPfzx4QJEyZMn8NUFEDLgmzyzL9/1xNr4ZgwYcKE6cWYTm3Sr/z7hc43YcKECROmP2SajWRCm4CgXeS/JwxMmDBhwnQH06wgOyuqzpad05w6xIMJEyZMmO5jSkqumyMymzS7fU4+8wehCSZMmDBhuoKpTW5nfz0VXuSBSxIuPLiOCRMmTJiuYEomPZtcstS2THx2Pg9mhQkTJkyYrmCaTa54WfwZ8kR6k+IWAQcmTJgwYbqCKX9lGyhstvB8a88/T5KQY8KECROm+5j2hdp8YWcT5uSz5cFHETdhwoQJE6a3YmqTz5ayTXTzcnAbENQfDBMmTJgwXcSUj1mIkDcU29bm7AmYMGHChOlzmNrmZbutJonxLBVPZvg764P7MWHChAnTpUx5a7Btf+b3tMd08pZnUZjGhAkTJkwXMbVbe5s2t+XXzUGfTcEXEyZMmDDdyjQLAs5OseWezbxIvzFhwoQJ0xVMs2Un/7sp1Cagzy43Y8KECROmO5iSwy55abVNkjel201peHhwBxMmTJgwvSHTZkNN2of7wzc51iyg+fFOTJgwYcJ0BVOexOZAScuwbVLum6btB8aECRMmTHcwtQdo2rLs5lBO+1+Hy82YMGHChOkKplkJNU9rV1vyYqlJeDE834QJEyZMmN6QadO8bDfjPD1O3pWXmOvWKSZMmDBhuo5plmqevd6m3/mRo/pjY8KECROm65jyguxsu03Ci5xjX24+EDdhwoQJE6aXZ2qP3ay22LIQvGmRbkIZTJgwYcJ0H1Nbis1Lq6dakhv0ZG4P2pmYMGHChOkKpvb4S/7i/GPkCW0bgrTtT0yYMGHCdBNT/YggpWyP3eTNyzx0+KMiLyZMmDBhemGmtjHZbreb1mP72TZ/xYQJEyZMdzO1bcvNMdBZ4XiVxAbjQeqLCRMmTJjelikv7Oatyt+fkE969jsfRUCACRMmTJjelqkdUXk0ZtqEJs97PiZMmDBhuolptn2endzZVugssMCECRMmTHcznWptzlLcWesxeVf+BEyYMGHC9AlMz96wc8TZwaD2+Q/eggkTJkyYPphpVn5NruTPnKEUpWRMmDBhwvSRTLOG4r5YfAoiDwswYcKECdN9TEmRN0lE84Bgf7xm3zqtAwJMmDBhwvSGTO3BnbxUmiS9s8JuW95NDhhhwoQJE6b7mAxMmDBhwoQJk4EJEyZMbzX+A6vRzU3TdzGWAAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Linux/" rel="tag">Linux</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="leancloud-views_num" data-flag-title="LVM的学习与使用">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=LVM的学习与使用&url=http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html&pic=http://yangzhaohua1998.github.io/img/Y.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=LVM的学习与使用&url=http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html&via=smart Patrick star" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=机智的派大星&title=LVM的学习与使用&summary=&pics=http://yangzhaohua1998.github.io/img/Y.png&url=http://yangzhaohua1998.github.io/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="LVM的学习与使用"><a href="#LVM的学习与使用" class="headerlink" title="LVM的学习与使用"></a>LVM的学习与使用</h1><h2 id="LVM的学习"><a href="#LVM的学习" class="headerlink" title="LVM的学习"></a>LVM的学习</h2><h3 id="LVM基础知识"><a href="#LVM基础知识" class="headerlink" title="LVM基础知识"></a>LVM基础知识</h3><p>LVM全称Logical Volume Manager（逻辑卷管理），通过将底层磁盘抽象封装，以逻辑卷的形式呈现给上层文件系统，是一种动态的磁盘管理机制。</p>
+<pre><code>· PE(physical Extend) LVM中最小的单位，默认为4M大小。
+
+· PV(physical Volume) 物理卷，表示一个磁盘的抽象。一个磁盘进行条带化后，也就是将磁盘都划分为一个一个PE后，就变成一个PV了。
+
+· VG(Volume Group) 卷组，由PV组成。相当于一个PE池。
+
+· LV(Logical Volume) 基于VG创建。从VG管理的PE池中划分一定的PE组成LV。因此，可能存在一个LV中存在不同磁盘的PE。</code></pre><h3 id="创建LVM"><a href="#创建LVM" class="headerlink" title="创建LVM"></a>创建LVM</h3><p>1、将物理磁盘条带化为PV</p>
+<pre><code>pvcreate /dev/sdb /dev/sdc</code></pre><p>2、创建卷组，并将PV加进卷组中</p>
+<pre><code>vgcreate myvg /dev/sdb /dev/sdc</code></pre><p>3、基于卷组创建逻辑卷</p>
+<pre><code>lvcreate -n mylv -L 2G myvg  
+参数：-n 对lv命名，-L 指定lv大小。</code></pre><p>4、为创建好的逻辑卷创建文件系统</p>
+<pre><code>mkfs.ext4 /dev/myvg/mylv</code></pre><p>5、将格式化好的逻辑卷挂载到/mnt目录使用</p>
+<pre><code>mount /dev/myvg/lv /mnt</code></pre><p>如下图所示：<br><img src="./images/LVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/%E5%88%9B%E5%BB%BAlv.png" alt="lvm管理系统"></p>
+<h3 id="删除LVM"><a href="#删除LVM" class="headerlink" title="删除LVM"></a>删除LVM</h3><p>1、卸载LV</p>
+<pre><code>umount /mnt</code></pre><p>2、删除LV</p>
+<pre><code>lvremove /dev/myvg/mylv</code></pre><p>3、删除VG</p>
+<pre><code>vgremove myvg</code></pre><p>4、删除物理卷</p>
+<pre><code>pvremove /dev/sdb</code></pre><h3 id="LV的拉伸"><a href="#LV的拉伸" class="headerlink" title="LV的拉伸"></a>LV的拉伸</h3><p>LV拉伸操作可以<em>在线执行</em></p>
+<p>1、保证VG有足够空闲空间</p>
+<pre><code>vgdisplay</code></pre><p>2、扩充LV</p>
+<pre><code>lvextend -L +1G /dev/myvg/mylv</code></pre><p>3、查看扩充后的LV大小</p>
+<pre><code>lvdisplay</code></pre><p>4、更新文件系统</p>
+<pre><code>resize2fs /dev/myvg/mylv</code></pre><p>5、查看更新后的文件系统</p>
+<pre><code>df -h</code></pre><h3 id="VG的拉伸"><a href="#VG的拉伸" class="headerlink" title="VG的拉伸"></a>VG的拉伸</h3><p>1、将添加到VG的硬盘条状话为PV</p>
+<pre><code>pvcreate /dev/sdd</code></pre><p>2、将新PV添加到指定卷组</p>
+<pre><code>vgextend myvg /dev/sdd</code></pre><p>3、查看扩充后的VG大小</p>
+<pre><code>vgdisplay</code></pre><h3 id="LV的缩小"><a href="#LV的缩小" class="headerlink" title="LV的缩小"></a>LV的缩小</h3><p>LV的缩小必须先卸载，<strong>无法在线执行</strong>。且此操作应慎重，当LV缩小后的容量比文件系统重设置后的容量小，则可能会损坏文件数据。如以下为将LV从19G缩容至10G：</p>
+<p>1、卸载已经挂载的LV</p>
+<pre><code>umount /mnt</code></pre><p>2、缩小文件系统为1G<br>(此命令将<strong>文件系统压缩为10G</strong>。且此命令执行前一般会让先校验文件系统)</p>
+<pre><code>resize2fs /dev/myvg/mylv 10G</code></pre><p>3、缩小LV</p>
+<pre><code>lvreduce -L -9G /dev/myvg/mylv</code></pre><p>4、查看缩小后的LV</p>
+<pre><code>lvdisplay</code></pre><p>5、挂载</p>
+<pre><code>mount /dev/myvg/mylv /mnt</code></pre><h3 id="VG的缩小"><a href="#VG的缩小" class="headerlink" title="VG的缩小"></a>VG的缩小</h3><p>常用在移除硬盘的前置操作。首先保证VG空闲空间比取走的硬盘空间容量大。</p>
+<p>1、将一个PV从vg中抽走(如sdd盘)，减小vg空间</p>
+<pre><code>vgreduce myvg /dev/sdd</code></pre><p>2、此时sdd还可以通过pv查看，但不属于任何vg</p>
+<pre><code>pvremove /dev/sdd</code></pre><h4 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h4><p>· 查看列出的分区表  <code>fdisk -l</code></p>
+<p>· 查看 PV 信息 <code>pvdisplay(详细)</code>  <code>pvs(简略)</code></p>
+<p>· 查看 VG 信息 <code>vgdisplay(详细)</code>  <code>vgs(简略)</code></p>
+<p>· 查看 LV 信息 <code>lvdisplay(详细)</code>  <code>lvs(简略)</code></p>
+<h2 id="LVM的使用"><a href="#LVM的使用" class="headerlink" title="LVM的使用"></a>LVM的使用</h2><p><strong>需求</strong>：将挂载到home下LV进行缩容，让出VG空闲600G。将两个300G的LV挂载到/var/lib/docker，和/srv。</p>
+<p>一、先对/home下的LV进行缩容<br>1、查看文件挂载情况<br>    <img src="./images/LVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/fdisk%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%A3%81%E7%9B%98%E6%83%85%E5%86%B5.png" alt="fdisk查看当前磁盘状况"><br>2、卸载/home下LV<br>    <code>umount /home</code><br>3、缩小home文件系统为3T<br>    <img src="./images/LVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/%E7%BC%A9%E5%B0%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.png" alt="缩小当前文件系统"><br>4、缩小LVhome1T的LV容量<br>    <img src="./images/LVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/%E7%BC%A9%E5%B0%8FLV.png" alt="缩小lv容量"><br>5、将LVhome挂载回<br>    <code>mount /dev/openeuler/home /home</code><br>二、创建LV并挂载到相应目录<br>1、创建两个300G的LV<br>    <img src="./images/LVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/%E5%88%9B%E5%BB%BA2%E4%B8%AAlv.png" alt="创建lv"><br>2、将两个LV进行文件系统格式化<br>    <img src="./images/LVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/%E5%AF%B9%E4%B8%A4%E4%B8%AAlv%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E8%BF%9B%E8%A1%8C%E6%A0%BC%E5%BC%8F%E5%8C%96.png" alt="将两个lv进行文件系统格式化"><br>3、将两个LV分别挂载到/srv、/var/lib/docker<br>    <code>mount /dev/openeuler/openeuler-srv /srv</code><br>    <code>mount /dev/openeuler/openeuler-var-lib-docker /var/lib/docker</code>  </p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 Gitalk -->
+<div id="gitalk-comment">
+    <!-- Gitalk 评论框 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script src="/js/md5.min.js"></script>
+
+<script>
+    var gitalk = new Gitalk({
+            clientID: 'c3f2f37a263e183af636',
+            clientSecret: '7305f6d3845290c6d341887b9831620dbb4e416b',
+            repo: 'gitalk-commnet',
+            owner: 'yangzhaohua1998',
+            admin: ['yangzhaohua1998'],
+            id: md5(location.pathname),
+            // facebook-like distraction free mode
+            distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
+        })
+   gitalk.render('gitalk-container')
+</script>
+</div>
+<style>
+    #gitalk-comment {
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/07/11/04-day-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC-Re-space/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -573,6 +836,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
@@ -804,6 +1075,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
     
@@ -820,6 +1095,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
