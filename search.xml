@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Vim学习笔记01</title>
+      <link href="/2021/06/12/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/"/>
+      <url>/2021/06/12/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vim学习笔记01"><a href="#Vim学习笔记01" class="headerlink" title="Vim学习笔记01"></a>Vim学习笔记01</h1><p>Vim是一款<strong>扩展性强</strong>、<strong>高效</strong>、<strong>便捷</strong>的文本编辑器，熟练使用者可以把鼠标扔进垃圾桶。</p><p>然而其使用尤其是要达到熟练使用是需要一定的学习成本的。光是他五花八门的配置、丰富多彩的插件的使用就需要学习一段时间。更无奈的是，网上许多Vim的配置往往是把自己好几百行功能强大的配置文件甩你脸上，这份配置还极可能是张三复制李四，李四克隆王五的。即使配置好了也不知道怎么用。</p><p>以上是我在学习Vim过程中所苦恼的问题。在一下午的摸索学习中，总算是找到几个感觉不错的文档来学习Vim的快捷键？如何配置Vim？这两个基础问题。怕以后遗忘，将其记录在此篇博客中。</p><p>1、官方vimtutor</p><blockquote><p>首先是Vim基础的快捷键学习，建议使用vimtutor。在安装Vim之后，终端中输入 <code>vimtutor</code> 即可进入官方的学习文档。</p></blockquote><p>2、<a href="https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49321" target="_blank" rel="noopener">笨方法学Vimscript</a><br>大致分为三个部分：</p><blockquote><ul><li>第一部分讲述了一些Vim的基本命令，通过这些命令修改你的~/.vimrc可以快速、 方便地定制你的Vim环境</li><li>第二部分将Vimscript作为一门编程语言做深入了解，包括变量、比较还有函数。</li><li>第三部分实例创建一个插件。</li></ul></blockquote><p>3、<a href="https://vimjc.com/vimrc.html" target="_blank" rel="noopener">无插件Vim配置文件vimrc推荐与各VIM配置项解释</a></p><p>4、<a href="https://dougblack.io/words/a-good-vimrc.html" target="_blank" rel="noopener">A Good Vimrc</a></p><blockquote><p>There are tons of tutorials such as this one on the internet that contain all kinds of awesome hacks to make your Vim better, but the absolute worst way to make your environment better is to just copy it wholesale from others. </p></blockquote><p>5、<a href="https://github.com/wklken/vim-for-server" target="_blank" rel="noopener">vim-for-server</a></p><blockquote><p>一个规范带注释的.vimrc文件</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LVM的学习与使用</title>
       <link href="/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
       <url>/2021/05/20/lvm%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
