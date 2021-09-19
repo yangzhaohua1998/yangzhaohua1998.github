@@ -4,11 +4,99 @@
   
     
     <entry>
+      <title>远程连接实验室服务器jupyter</title>
+      <link href="/2021/09/11/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E5%AE%9E%E9%AA%8C%E5%AE%A4jupyter/"/>
+      <url>/2021/09/11/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E5%AE%9E%E9%AA%8C%E5%AE%A4jupyter/</url>
+      
+        <content type="html"><![CDATA[<h1 id="远程连接实验室服务器jupyter"><a href="#远程连接实验室服务器jupyter" class="headerlink" title="远程连接实验室服务器jupyter"></a>远程连接实验室服务器jupyter</h1><p>配置了一下自己的开发环境，并且远程连接了服务器的jupyter，在这里记录一下，方便以后重装。。。</p><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>通过ssh远程连接服务器。我安装的是miniconda，从官网或者<a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank" rel="noopener">清华镜像</a>，使用wget或者下载对应版本上传服务器即可。</p><p>下载下来的文件是一个.sh文件。使用bash运行，即可自动安装。一般来说安装完，在 <em>~/.bashrc</em> 文件中最后一行会出现 <code># &lt;&lt;&lt; conda initialize &lt;&lt;&lt;</code> 命令，以及文件中有miniconda的路径。source ~/.bashrc使环境生效。同时进入bash中。</p><p>如此，miniconda就安装完成。</p><h2 id="jupyter及torch安装"><a href="#jupyter及torch安装" class="headerlink" title="jupyter及torch安装"></a>jupyter及torch安装</h2><p>在conda环境下，运行 <code>pip install jupyter torch torchvision</code> 自动安装。</p><h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><p>在进行远程连接的时候，有点小问题。只设置了密码。</p><p>通过命令 <code>jupyter notebook --generate-config</code>生成配置文件。通过<code>jupyter notebook password</code>设置密码（如果不设置直接用token应该也是可以的）。</p><p>通过<code>jupyter notebook --no-browser --port=8889</code>这个命令是：不打开浏览器，设置打开端口为8889（<code>jupyter notebook</code>默认是打开浏览器，端口为8888）。</p><p>打开服务器jupyter后，打开本地终端，通过<code>ssh -N -f -L localhost:8888:localhost:1111 -p 20189 username@ip</code>将服务器端口1111映射到本地8888。但是实验室服务器外网ssh只能从20189端口进，所以要-p指定ssh端口。否则默认端口是22连接不上。</p><p>连接上后，会要求你输入用户密码。密码正确后就完成端口映射了。</p><p>这时候你就可以在本地浏览器中输入localhost:1111，打开jupyter了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Leetcode学习计划</title>
+      <link href="/2021/08/16/Leetcode%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
+      <url>/2021/08/16/Leetcode%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</url>
+      
+        <content type="html"><![CDATA[<h1 id="one-day-二分查找"><a href="#one-day-二分查找" class="headerlink" title="one day 二分查找"></a>one day 二分查找</h1><p><strong>二分查找</strong>主要是对区间的定义想清楚，要在二分查找中，保持不变量，就是在while寻找中，每次边界的处理都要坚持根据区间的定义来操作，写二分法，区间的定义一般为两种，全闭[left, right]，或者半闭[left, right)。</p><h2 id="全闭写法"><a href="#全闭写法" class="headerlink" title="全闭写法"></a>全闭写法</h2><pre><code class="c++">class Solution {pulic:    int binarySearch()}</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> easy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Leetcode学习计划</title>
+      <link href="/2021/08/16/template/"/>
+      <url>/2021/08/16/template/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> easy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vim基本命令</title>
       <link href="/2021/06/13/vim%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
       <url>/2021/06/13/vim%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<p>学了vimtutor后总是记不住，于是复制每个章节的summary，方便回忆。</p><h2 id="Lesson-1-SUMMARY"><a href="#Lesson-1-SUMMARY" class="headerlink" title="Lesson 1 SUMMARY"></a>Lesson 1 SUMMARY</h2><ol><li><p>The cursor is moved using either the arrow keys or the hjkl keys.</p><pre><code>  h (left)       j (down)       k (up)       l (right)</code></pre></li><li><p>To start Vim from the shell prompt type:  vim FILENAME <code>ENTER</code></p></li><li><p>To exit Vim type:     <code>ESC</code>   :q!   <code>ENTER</code>  to trash all changes.OR type: <code>ESC</code> :wq <code>ENTER</code> to save the changes.</p></li><li><p>To delete the character at the cursor type:  x</p></li><li><p>To insert or append text type: <strong>i</strong> type inserted text <code>ESC</code> insert before the cursor. <strong>A</strong> type appended text <code>ESC</code> append after the line</p></li></ol><p>NOTE: Pressing <code>ESC</code> will place you in Normal mode or will cancel an unwanted and partially completed command.</p><h2 id="Lesson-2-SUMMARY"><a href="#Lesson-2-SUMMARY" class="headerlink" title="Lesson 2 SUMMARY"></a>Lesson 2 SUMMARY</h2><ol><li>To delete from the cursor up to the next word type: <strong>dw</strong></li><li>To delete from the cursor to the end of a line type: <strong>d$</strong></li><li>To delete a whole line type: <strong>dd</strong></li><li>To repeat a motion prepend it with a number:    <strong>2w</strong></li><li>The format for a change command is: <code>operator   [number]   motion</code></li></ol><p>where:</p><ul><li><p>operator - is what to do, such as  d  for delete</p></li><li><p>[number] - is an optional count to repeat the motion</p></li><li><p>motion   - moves over the text to operate on, such as  w (word), $ (to the end of line), etc.</p></li><li><p>To move to the start of the line use a zero:  <strong>0</strong></p></li><li><p>To undo previous actions, type: <strong>u</strong> ( lowercase u)</p></li><li><p>To undo all the changes on a line, type: <strong>U</strong>  (capital U)</p></li><li><p>To undo the undo’s, type: <strong>CTRL-R</strong></p></li></ul><h2 id="Lesson-3-SUMMARY"><a href="#Lesson-3-SUMMARY" class="headerlink" title="Lesson 3 SUMMARY"></a>Lesson 3 SUMMARY</h2><ol><li>To put back text that has just been deleted, type <strong>p</strong>. This puts the deleted text <strong>AFTER</strong> the cursor  (if a line was deleted it will go on the line below the cursor).</li><li>To replace the character under the cursor, type <strong>r</strong> and then then the character you want to have there.</li><li>The change operator allows you to change from the cursor to where the motion takes you. eg. Typer <strong>ce</strong> to change from the cursor to the end of the word, <strong>c$</strong> to change to the end of a line.</li><li>The format for change is: <code>c [number] motion</code>.</li></ol><h2 id="Lesson-4-SUMMARY"><a href="#Lesson-4-SUMMARY" class="headerlink" title="Lesson 4 SUMMARY"></a>Lesson 4 SUMMARY</h2><ol><li><p>CTRL-G displays your location in the file and file status.</p><blockquote><p><strong>G</strong> moves to the end of the file.<br><strong>number G</strong> moves to that line number.<br><strong>g</strong> moves to the first line.</p></blockquote></li><li><p>Typing <strong>/</strong> followed by a phrase searches FORWARD for the phrase.<br>Typing <strong>?</strong> followed by a phrase searches BACKWARD  for the phrase.<br>After a search type <strong>n</strong> to find the next occurence in the same direction or <strong>N</strong> to search in the opposite direction.<br><code>CTRL-o</code> takes you back to older positions, <code>CTRL-i</code> to newer positions.</p></li><li><p>Typing <strong>%</strong> while the cursor is on a (,),[,],{,or} goes to its match.</p></li><li><p>To substitute new for the first old in a line type    <code>:s/old/new</code><br>To substitute new for all ‘old’s on a line type       <code>:s/old/new/g</code><br>To substitute phrases between two line #’s type       <code>:#,#s/old/new/g</code><br>To substitute all occurrences in the file type        <code>:%s/old/new/g</code><br>To ask for confirmation each time add ‘c’             <code>:%s/old/new/gc</code></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<p>学了vimtutor后总是记不住，于是复制每个章节的summary，方便回忆。</p><h2 id="Lesson-1-SUMMARY"><a href="#Lesson-1-SUMMARY" class="headerlink" title="Lesson 1 SUMMARY"></a>Lesson 1 SUMMARY</h2><ol><li><p>The cursor is moved using either the arrow keys or the hjkl keys.</p><pre><code>  h (left)       j (down)       k (up)       l (right)</code></pre></li><li><p>To start Vim from the shell prompt type:  vim FILENAME <code>ENTER</code></p></li><li><p>To exit Vim type:     <code>ESC</code>   :q!   <code>ENTER</code>  to trash all changes.OR type: <code>ESC</code> :wq <code>ENTER</code> to save the changes.</p></li><li><p>To delete the character at the cursor type:  x</p></li><li><p>To insert or append text type: <strong>i</strong> type inserted text <code>ESC</code> insert before the cursor. <strong>A</strong> type appended text <code>ESC</code> append after the line</p></li></ol><p>NOTE: Pressing <code>ESC</code> will place you in Normal mode or will cancel an unwanted and partially completed command.</p><h2 id="Lesson-2-SUMMARY"><a href="#Lesson-2-SUMMARY" class="headerlink" title="Lesson 2 SUMMARY"></a>Lesson 2 SUMMARY</h2><ol><li>To delete from the cursor up to the next word type: <strong>dw</strong></li><li>To delete from the cursor to the end of a line type: <strong>d$</strong></li><li>To delete a whole line type: <strong>dd</strong></li><li>To repeat a motion prepend it with a number:    <strong>2w</strong></li><li>The format for a change command is: <code>operator   [number]   motion</code></li></ol><p>where:</p><ul><li><p>operator - is what to do, such as  d  for delete</p></li><li><p>[number] - is an optional count to repeat the motion</p></li><li><p>motion   - moves over the text to operate on, such as  w (word), $ (to the end of line), etc.</p></li><li><p>To move to the start of the line use a zero:  <strong>0</strong></p></li><li><p>To undo previous actions, type: <strong>u</strong> ( lowercase u)</p></li><li><p>To undo all the changes on a line, type: <strong>U</strong>  (capital U)</p></li><li><p>To undo the undo’s, type: <strong>CTRL-R</strong></p></li></ul><h2 id="Lesson-3-SUMMARY"><a href="#Lesson-3-SUMMARY" class="headerlink" title="Lesson 3 SUMMARY"></a>Lesson 3 SUMMARY</h2><ol><li>To put back text that has just been deleted, type <strong>p</strong>. This puts the deleted text <strong>AFTER</strong> the cursor  (if a line was deleted it will go on the line below the cursor).</li><li>To replace the character under the cursor, type <strong>r</strong> and then then the character you want to have there.</li><li>The change operator allows you to change from the cursor to where the motion takes you. eg. Typer <strong>ce</strong> to change from the cursor to the end of the word, <strong>c$</strong> to change to the end of a line.</li><li>The format for change is: <code>c [number] motion</code>.</li></ol><h2 id="Lesson-4-SUMMARY"><a href="#Lesson-4-SUMMARY" class="headerlink" title="Lesson 4 SUMMARY"></a>Lesson 4 SUMMARY</h2><ol><li><p>CTRL-G displays your location in the file and file status.</p><blockquote><p><strong>G</strong> moves to the end of the file.<br><strong>number G</strong> moves to that line number.<br><strong>g</strong> moves to the first line.</p></blockquote></li><li><p>Typing <strong>/</strong> followed by a phrase searches FORWARD for the phrase.<br>Typing <strong>?</strong> followed by a phrase searches BACKWARD  for the phrase.<br>After a search type <strong>n</strong> to find the next occurence in the same direction or <strong>N</strong> to search in the opposite direction.<br><code>CTRL-o</code> takes you back to older positions, <code>CTRL-i</code> to newer positions.</p></li><li><p>Typing <strong>%</strong> while the cursor is on a (,),[,],{,or} goes to its match.</p></li><li><p>To substitute new for the first old in a line type    <code>:s/old/new</code><br>To substitute new for all ‘old’s on a line type       <code>:s/old/new/g</code><br>To substitute phrases between two line #’s type       <code>:#,#s/old/new/g</code><br>To substitute all occurrences in the file type        <code>:%s/old/new/g</code><br>To ask for confirmation each time add ‘c’             <code>:%s/old/new/gc</code></p></li></ol><h2 id="Lesson-5-SUMMARY"><a href="#Lesson-5-SUMMARY" class="headerlink" title="Lesson 5 SUMMARY"></a>Lesson 5 SUMMARY</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo简单命令</title>
+      <link href="/2021/06/12/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%96%B9%E6%B3%95/"/>
+      <url>/2021/06/12/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo简单命令"><a href="#hexo简单命令" class="headerlink" title="hexo简单命令"></a>hexo简单命令</h1><p>由于不经常更新博客，所以经常忘记hexo相关命令，所以将一些简单命令记录到这里，方便查阅。</p><p>…算了，懒得抄。<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">hexo官方文档</a></p>]]></content>
       
       
       
@@ -140,6 +228,33 @@
             <tag> easy </tag>
             
             <tag> BiTree </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>删除有序数组中的重复项(Remove Duplicates from Sorted Array)</title>
+      <link href="/2020/06/25/05-day-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9-Remove-Duplicates-from-Sorted-Array/"/>
+      <url>/2020/06/25/05-day-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9-Remove-Duplicates-from-Sorted-Array/</url>
+      
+        <content type="html"><![CDATA[<h1 id="删除有序数组中的重复项-Remove-Duplicates-from-Sorted-Array"><a href="#删除有序数组中的重复项-Remove-Duplicates-from-Sorted-Array" class="headerlink" title="删除有序数组中的重复项(Remove Duplicates from Sorted Array)"></a>删除有序数组中的重复项(Remove Duplicates from Sorted Array)</h1><p>Given an integer array <em>nums</em> sorted in <strong>non-decreasing order</strong>, remove the duplicates in-place such that each unique element appears only once. There relation</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> easy </tag>
+            
+            <tag> 数组 </tag>
             
         </tags>
       
