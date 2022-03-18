@@ -4,6 +4,70 @@
   
     
     <entry>
+      <title>linux基础操作</title>
+      <link href="/2022/03/18/linux%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/03/18/linux%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux简单操作"><a href="#Linux简单操作" class="headerlink" title="Linux简单操作"></a>Linux简单操作</h1><h2 id="创建账户"><a href="#创建账户" class="headerlink" title="创建账户"></a>创建账户</h2><p><code>sudo useradd -s /bin/bash -d /home/username -m username</code></p><p>常用选项：</p><p><code>-s</code>指定用户登录的shell版本；<br><code>-d</code>指定用户的主目录；<br><code>-m</code>如果存在则不再创建，但是此目录并不属于新创建的用户，若不存在则强制创建。一般与<code>-d</code>配合使用。</p><p><code>sudo passwd username</code>为username设置密码。</p><h2 id="查看磁盘"><a href="#查看磁盘" class="headerlink" title="查看磁盘"></a>查看磁盘</h2><p><code>df -h</code>or<code>du -h \home\user\*</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>conda操作命令</title>
+      <link href="/2022/01/21/conda%E5%91%BD%E4%BB%A4/"/>
+      <url>/2022/01/21/conda%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="conda相关操作"><a href="#conda相关操作" class="headerlink" title="conda相关操作"></a>conda相关操作</h2><h3 id="查看环境管理帮助命令"><a href="#查看环境管理帮助命令" class="headerlink" title="查看环境管理帮助命令"></a>查看环境管理帮助命令</h3><pre><code class="yml">conda env -h</code></pre><h3 id="创建指定python版本并预安装一些包"><a href="#创建指定python版本并预安装一些包" class="headerlink" title="创建指定python版本并预安装一些包"></a>创建指定python版本并预安装一些包</h3><pre><code class="yml">conda create -n your_env_name python=3.6 numpy scipy</code></pre><h3 id="查看当前所有环境"><a href="#查看当前所有环境" class="headerlink" title="查看当前所有环境"></a>查看当前所有环境</h3><p>（两命令等价）</p><pre><code class="yml">conda inf --envsconda env list</code></pre><h3 id="激活某个环境"><a href="#激活某个环境" class="headerlink" title="激活某个环境"></a>激活某个环境</h3><pre><code class="yml">conda activate your_env_name</code></pre><h3 id="退出当前环境"><a href="#退出当前环境" class="headerlink" title="退出当前环境"></a>退出当前环境</h3><pre><code class="yml">conda deactivate</code></pre><h3 id="复制某个环境"><a href="#复制某个环境" class="headerlink" title="复制某个环境"></a>复制某个环境</h3><pre><code class="yml">conda create --name new_env_name --clone old_env_name</code></pre><h3 id="删除某个环境"><a href="#删除某个环境" class="headerlink" title="删除某个环境"></a>删除某个环境</h3><pre><code class="yml">conda remove --name your_env_name</code></pre><h3 id="分享自己的环境给别人"><a href="#分享自己的环境给别人" class="headerlink" title="分享自己的环境给别人"></a>分享自己的环境给别人</h3><pre><code class="yml">conda env export &gt; enviroment.yml</code></pre><h3 id="通过别人的环境配置文件创建自己的环境"><a href="#通过别人的环境配置文件创建自己的环境" class="headerlink" title="通过别人的环境配置文件创建自己的环境"></a>通过别人的环境配置文件创建自己的环境</h3><pre><code class="yml">conda env create -f enviroment.yml</code></pre><h3 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h3><p>列举当前环境的所有包</p><pre><code class="yml">conda list</code></pre><p>列举某个环境的所有包</p><pre><code class="yml">conda list -n your_env_name</code></pre><p>在当前环境安装包</p><pre><code class="yml">conda install package_name </code></pre><p>为指定环境安装某个包</p><pre><code class="yml">conda install -env_name package_name</code></pre><h3 id="在环境内安装pytorch"><a href="#在环境内安装pytorch" class="headerlink" title="在环境内安装pytorch"></a>在环境内安装pytorch</h3><p>查看cuda版本</p><pre><code class="yml">cat /usr/local/cuda/version.txt</code></pre><p>安装pytorch</p><pre><code class="yml">conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>miniconda环境配置</title>
+      <link href="/2022/01/21/miniconda%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/01/21/miniconda%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="更改miniconda环境配置"><a href="#更改miniconda环境配置" class="headerlink" title="更改miniconda环境配置"></a>更改miniconda环境配置</h2><p>因为移动了miniconda文件夹的位置，所以导致miniconda环境配置错误了，使用命令conda时候会报<code>-bash: /home/xxxxx/miniconda3/bin/conda: No such file or directory</code></p><p>使用<code>echo $PATH</code>查看环境配置，发现miniconda的环境配置还是在移动前的路径。</p><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>在使用<code>vim ~/.bashrc</code>添加最新的miniconda的路径</p><p><code>export PATH=&quot;/mnt/disk2/xxxxx/miniconda3/bin:$PATH&quot;</code></p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>把miniconda3中以下的配置路径都修改为最新的路径（其中的路径都很明显，基本都是在开头就可以看到，有#!后的路径，也有定义为常量后的路径）。</p><pre><code class="shell">/mnt/disk2/xxxxx/miniconda3/bin/activate/mnt/disk2/xxxxx/miniconda3/bin/conda/mnt/disk2/xxxxx/miniconda3/bin/pip/mnt/disk2/xxxxx/miniconda3/etc/profile.d/conda.sh</code></pre><h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>修改完成后使用输入命令<br><code>source ~/.bashrc</code><br>即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>会议下载地址</title>
+      <link href="/2022/01/12/%E4%BC%9A%E8%AE%AE%E8%AE%BA%E6%96%87%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+      <url>/2022/01/12/%E4%BC%9A%E8%AE%AE%E8%AE%BA%E6%96%87%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="会议论文下载地址"><a href="#会议论文下载地址" class="headerlink" title="会议论文下载地址"></a>会议论文下载地址</h1><p><strong>NeurIPS：</strong> <a href="https://papers.nips.cc/paper/2021" target="_blank" rel="noopener">https://papers.nips.cc/paper/2021</a></p><p><strong>CVPR：</strong><a href="https://openaccess.thecvf.com/CVPR2021" target="_blank" rel="noopener">https://openaccess.thecvf.com/CVPR2021</a></p><p><strong>ICCV：</strong><a href="https://openaccess.thecvf.com/ICCV2021" target="_blank" rel="noopener">https://openaccess.thecvf.com/ICCV2021</a></p><p><strong>ICLR：</strong><a href="https://iclr.cc/virtual/2021/papers.html" target="_blank" rel="noopener">https://iclr.cc/virtual/2021/papers.html</a></p><p><strong>ICML：</strong><a href="https://icml.cc/virtual/2021/papers.html" target="_blank" rel="noopener">https://icml.cc/virtual/2021/papers.html</a></p><p><strong>AAAI2021：</strong><a href="https://aaai.org/Library/AAAI/aaai21contents.php" target="_blank" rel="noopener">https://aaai.org/Library/AAAI/aaai21contents.php</a></p><p><strong>IJCAI2021：</strong><a href="https://www.ijcai.org/proceedings/2021" target="_blank" rel="noopener">https://www.ijcai.org/proceedings/2021</a></p><p><strong>Ubicomp2021：</strong><a href="https://dl.acm.org/action/doSearch?SeriesKey=imwut" target="_blank" rel="noopener">https://dl.acm.org/action/doSearch?SeriesKey=imwut</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 科研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>远程连接实验室服务器jupyter</title>
       <link href="/2021/09/11/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E5%AE%9E%E9%AA%8C%E5%AE%A4jupyter/"/>
       <url>/2021/09/11/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E5%AE%9E%E9%AA%8C%E5%AE%A4jupyter/</url>
@@ -27,7 +91,7 @@
       <link href="/2021/08/16/Leetcode%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
       <url>/2021/08/16/Leetcode%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</url>
       
-        <content type="html"><![CDATA[<h1 id="one-day-二分查找"><a href="#one-day-二分查找" class="headerlink" title="one day 二分查找"></a>one day 二分查找</h1><p><strong>二分查找</strong>主要是对区间的定义想清楚，要在二分查找中，保持不变量，就是在while寻找中，每次边界的处理都要坚持根据区间的定义来操作，写二分法，区间的定义一般为两种，全闭[left, right]，或者半闭[left, right)。</p><h2 id="全闭写法"><a href="#全闭写法" class="headerlink" title="全闭写法"></a>全闭写法</h2><pre><code class="c++">class Solution {pulic:    int binarySearch()}</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="one-day-二分查找"><a href="#one-day-二分查找" class="headerlink" title="one day 二分查找"></a>one day 二分查找</h1><p><strong>二分查找</strong>主要是对区间的定义想清楚，要在二分查找中，保持不变量，就是在while寻找中，每次边界的处理都要坚持根据区间的定义来操作，写二分法，区间的定义一般为两种，全闭[left, right]，或者半闭[left, right)。</p><h2 id="全闭写法"><a href="#全闭写法" class="headerlink" title="全闭写法"></a>全闭写法</h2><pre><code class="cpp">class Solution {pulic:    int binarySearch(vector&lt;int&gt;&amp; nums, int target){        int left = 0;        int right = nums.size() - 1; //定义target在左右闭的区间里,[left, right]        while(left &lt;= right){ //当left == right, 区间[left, right]依然有效, 所以用&lt;=            int         }    }}</code></pre>]]></content>
       
       
       <categories>
@@ -137,16 +201,10 @@
         <content type="html"><![CDATA[<h1 id="LVM的学习与使用"><a href="#LVM的学习与使用" class="headerlink" title="LVM的学习与使用"></a>LVM的学习与使用</h1><h2 id="LVM的学习"><a href="#LVM的学习" class="headerlink" title="LVM的学习"></a>LVM的学习</h2><h3 id="LVM基础知识"><a href="#LVM基础知识" class="headerlink" title="LVM基础知识"></a>LVM基础知识</h3><p>LVM全称Logical Volume Manager（逻辑卷管理），通过将底层磁盘抽象封装，以逻辑卷的形式呈现给上层文件系统，是一种动态的磁盘管理机制。</p><pre><code>· PE(physical Extend) LVM中最小的单位，默认为4M大小。· PV(physical Volume) 物理卷，表示一个磁盘的抽象。一个磁盘进行条带化后，也就是将磁盘都划分为一个一个PE后，就变成一个PV了。· VG(Volume Group) 卷组，由PV组成。相当于一个PE池。· LV(Logical Volume) 基于VG创建。从VG管理的PE池中划分一定的PE组成LV。因此，可能存在一个LV中存在不同磁盘的PE。</code></pre><h3 id="创建LVM"><a href="#创建LVM" class="headerlink" title="创建LVM"></a>创建LVM</h3><p>1、将物理磁盘条带化为PV</p><pre><code>pvcreate /dev/sdb /dev/sdc</code></pre><p>2、创建卷组，并将PV加进卷组中</p><pre><code>vgcreate myvg /dev/sdb /dev/sdc</code></pre><p>3、基于卷组创建逻辑卷</p><pre><code>lvcreate -n mylv -L 2G myvg  参数：-n 对lv命名，-L 指定lv大小。</code></pre><p>4、为创建好的逻辑卷创建文件系统</p><pre><code>mkfs.ext4 /dev/myvg/mylv</code></pre><p>5、将格式化好的逻辑卷挂载到/mnt目录使用</p><pre><code>mount /dev/myvg/lv /mnt</code></pre><p>如下图所示：<br><img src="%5Cimages%5CLVM%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%BD%BF%E7%94%A8%5C%E5%88%9B%E5%BB%BAlv.png" alt="lvm管理系统"></p><h3 id="删除LVM"><a href="#删除LVM" class="headerlink" title="删除LVM"></a>删除LVM</h3><p>1、卸载LV</p><pre><code>umount /mnt</code></pre><p>2、删除LV</p><pre><code>lvremove /dev/myvg/mylv</code></pre><p>3、删除VG</p><pre><code>vgremove myvg</code></pre><p>4、删除物理卷</p><pre><code>pvremove /dev/sdb</code></pre><h3 id="LV的拉伸"><a href="#LV的拉伸" class="headerlink" title="LV的拉伸"></a>LV的拉伸</h3><p>LV拉伸操作可以<em>在线执行</em></p><p>1、保证VG有足够空闲空间</p><pre><code>vgdisplay</code></pre><p>2、扩充LV</p><pre><code>lvextend -L +1G /dev/myvg/mylv</code></pre><p>3、查看扩充后的LV大小</p><pre><code>lvdisplay</code></pre><p>4、更新文件系统</p><pre><code>resize2fs /dev/myvg/mylv</code></pre><p>5、查看更新后的文件系统</p><pre><code>df -h</code></pre><h3 id="VG的拉伸"><a href="#VG的拉伸" class="headerlink" title="VG的拉伸"></a>VG的拉伸</h3><p>1、将添加到VG的硬盘条状话为PV</p><pre><code>pvcreate /dev/sdd</code></pre><p>2、将新PV添加到指定卷组</p><pre><code>vgextend myvg /dev/sdd</code></pre><p>3、查看扩充后的VG大小</p><pre><code>vgdisplay</code></pre><h3 id="LV的缩小"><a href="#LV的缩小" class="headerlink" title="LV的缩小"></a>LV的缩小</h3><p>LV的缩小必须先卸载，<strong>无法在线执行</strong>。且此操作应慎重，当LV缩小后的容量比文件系统重设置后的容量小，则可能会损坏文件数据。如以下为将LV从19G缩容至10G：</p><p>1、卸载已经挂载的LV</p><pre><code>umount /mnt</code></pre><p>2、缩小文件系统为1G<br>(此命令将<strong>文件系统压缩为10G</strong>。且此命令执行前一般会让先校验文件系统)</p><pre><code>resize2fs /dev/myvg/mylv 10G</code></pre><p>3、缩小LV</p><pre><code>lvreduce -L -9G /dev/myvg/mylv</code></pre><p>4、查看缩小后的LV</p><pre><code>lvdisplay</code></pre><p>5、挂载</p><pre><code>mount /dev/myvg/mylv /mnt</code></pre><h3 id="VG的缩小"><a href="#VG的缩小" class="headerlink" title="VG的缩小"></a>VG的缩小</h3><p>常用在移除硬盘的前置操作。首先保证VG空闲空间比取走的硬盘空间容量大。</p><p>1、将一个PV从vg中抽走(如sdd盘)，减小vg空间</p><pre><code>vgreduce myvg /dev/sdd</code></pre><p>2、此时sdd还可以通过pv查看，但不属于任何vg</p><pre><code>pvremove /dev/sdd</code></pre><h4 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h4><p>· 查看列出的分区表  <code>fdisk -l</code></p><p>· 查看 PV 信息 <code>pvdisplay(详细)</code>  <code>pvs(简略)</code></p><p>· 查看 VG 信息 <code>vgdisplay(详细)</code>  <code>vgs(简略)</code></p><p>· 查看 LV 信息 <code>lvdisplay(详细)</code>  <code>lvs(简略)</code></p><h2 id="LVM的使用"><a href="#LVM的使用" class="headerlink" title="LVM的使用"></a>LVM的使用</h2><p><strong>需求</strong>：将挂载到home下LV进行缩容，让出VG空闲600G。将两个300G的LV挂载到/var/lib/docker，和/srv。  </p><p>一、先对/home下的LV进行缩容<br>1、查看文件挂载情况<br>    <code>df -h</code><br>2、卸载/home下LV<br>    <code>umount /home</code><br>3、缩小home文件系统为3T<br>    <code>e2fsck -f /dev/mapper/openeuler-home</code>(检查文件系统)<br>    <code>resize2fs /dev/mapper/openeuler-home 3T</code>(文件系统重置为3T大小)<br>4、缩小LVhome1T的LV容量<br>    <code>lvreduce -L -1T /dev/mapper/openeuler-home</code>(home下lv缩小1T容量，理论上将原来4.3T的文件系统重置为了3T大小后，lv应缩容1.3T。但是为了为了保险起见只缩容了1T，但是不可以超过1.3T)<br>5、将LVhome挂载回<br>    <code>mount /dev/openeuler/home /home</code><br>二、创建LV并挂载到相应目录<br>1、创建两个300G的LV<br>    <code>lvcreate -n openeuler-srv -L 300G openeuler</code><br>    <code>lvcreate -n openeuler-var-lib-docker -L 300G openeuler</code><br>2、将两个LV进行文件系统格式化<br>    <code>mkfs.ext4 /dev/openeuler/openeuler-srv</code><br>    <code>mkfs.ext4 /dev/openeuler/openeuler-var-lib-docker</code>  </p><p>3、将两个LV分别挂载到/srv、/var/lib/docker<br>    <code>mount /dev/openeuler/openeuler-srv /srv</code><br>    <code>mount /dev/openeuler/openeuler-var-lib-docker /var/lib/docker</code>  </p>]]></content>
       
       
-      <categories>
-          
-          <category> LeetCode </category>
-          
-      </categories>
-      
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> 环境配置 </tag>
             
         </tags>
       
