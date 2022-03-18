@@ -156,11 +156,11 @@
     
     
     <entry>
-      <title>hexo简单命令</title>
-      <link href="/2021/06/12/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%96%B9%E6%B3%95/"/>
-      <url>/2021/06/12/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%96%B9%E6%B3%95/</url>
+      <title>Vim学习笔记01</title>
+      <link href="/2021/06/12/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/"/>
+      <url>/2021/06/12/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</url>
       
-        <content type="html"><![CDATA[<h1 id="hexo简单命令"><a href="#hexo简单命令" class="headerlink" title="hexo简单命令"></a>hexo简单命令</h1><p>由于不经常更新博客，所以经常忘记hexo相关命令，所以将一些简单命令记录到这里，方便查阅。</p><p>…算了，懒得抄。<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">hexo官方文档</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Vim学习笔记01"><a href="#Vim学习笔记01" class="headerlink" title="Vim学习笔记01"></a>Vim学习笔记01</h1><p>Vim是一款<strong>扩展性强</strong>、<strong>高效</strong>、<strong>便捷</strong>的文本编辑器，熟练使用者可以把鼠标扔进垃圾桶。</p><p>然而其使用尤其是要达到熟练使用是需要一定的学习成本的。光是他五花八门的配置、丰富多彩的插件的使用就需要学习一段时间。更无奈的是，网上许多Vim的配置往往是把自己好几百行功能强大的配置文件甩你脸上，这份配置还极可能是张三复制李四，李四克隆王五的。即使配置好了也不知道怎么用。</p><p>以上是我在学习Vim过程中所苦恼的问题。在一下午的摸索学习中，总算是找到几个感觉不错的文档来学习Vim的快捷键？如何配置Vim？这两个基础问题。怕以后遗忘，将其记录在此篇博客中。</p><p>1、官方vimtutor</p><blockquote><p>首先是Vim基础的快捷键学习，建议使用vimtutor。在安装Vim之后，终端中输入 <code>vimtutor</code> 即可进入官方的学习文档。</p></blockquote><p>2、<a href="https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49321" target="_blank" rel="noopener">笨方法学Vimscript</a><br>大致分为三个部分：</p><blockquote><ul><li>第一部分讲述了一些Vim的基本命令，通过这些命令修改你的~/.vimrc可以快速、 方便地定制你的Vim环境</li><li>第二部分将Vimscript作为一门编程语言做深入了解，包括变量、比较还有函数。</li><li>第三部分实例创建一个插件。</li></ul></blockquote><p>3、<a href="https://vimjc.com/vimrc.html" target="_blank" rel="noopener">无插件Vim配置文件vimrc推荐与各VIM配置项解释</a></p><p>4、<a href="https://dougblack.io/words/a-good-vimrc.html" target="_blank" rel="noopener">A Good Vimrc</a></p><blockquote><p>There are tons of tutorials such as this one on the internet that contain all kinds of awesome hacks to make your Vim better, but the absolute worst way to make your environment better is to just copy it wholesale from others. </p></blockquote><p>5、<a href="https://github.com/wklken/vim-for-server" target="_blank" rel="noopener">vim-for-server</a></p><blockquote><p>一个规范带注释的.vimrc文件</p></blockquote>]]></content>
       
       
       
@@ -175,11 +175,11 @@
     
     
     <entry>
-      <title>Vim学习笔记01</title>
-      <link href="/2021/06/12/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/"/>
-      <url>/2021/06/12/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</url>
+      <title>hexo简单命令</title>
+      <link href="/2021/06/12/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%96%B9%E6%B3%95/"/>
+      <url>/2021/06/12/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%96%B9%E6%B3%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="Vim学习笔记01"><a href="#Vim学习笔记01" class="headerlink" title="Vim学习笔记01"></a>Vim学习笔记01</h1><p>Vim是一款<strong>扩展性强</strong>、<strong>高效</strong>、<strong>便捷</strong>的文本编辑器，熟练使用者可以把鼠标扔进垃圾桶。</p><p>然而其使用尤其是要达到熟练使用是需要一定的学习成本的。光是他五花八门的配置、丰富多彩的插件的使用就需要学习一段时间。更无奈的是，网上许多Vim的配置往往是把自己好几百行功能强大的配置文件甩你脸上，这份配置还极可能是张三复制李四，李四克隆王五的。即使配置好了也不知道怎么用。</p><p>以上是我在学习Vim过程中所苦恼的问题。在一下午的摸索学习中，总算是找到几个感觉不错的文档来学习Vim的快捷键？如何配置Vim？这两个基础问题。怕以后遗忘，将其记录在此篇博客中。</p><p>1、官方vimtutor</p><blockquote><p>首先是Vim基础的快捷键学习，建议使用vimtutor。在安装Vim之后，终端中输入 <code>vimtutor</code> 即可进入官方的学习文档。</p></blockquote><p>2、<a href="https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49321" target="_blank" rel="noopener">笨方法学Vimscript</a><br>大致分为三个部分：</p><blockquote><ul><li>第一部分讲述了一些Vim的基本命令，通过这些命令修改你的~/.vimrc可以快速、 方便地定制你的Vim环境</li><li>第二部分将Vimscript作为一门编程语言做深入了解，包括变量、比较还有函数。</li><li>第三部分实例创建一个插件。</li></ul></blockquote><p>3、<a href="https://vimjc.com/vimrc.html" target="_blank" rel="noopener">无插件Vim配置文件vimrc推荐与各VIM配置项解释</a></p><p>4、<a href="https://dougblack.io/words/a-good-vimrc.html" target="_blank" rel="noopener">A Good Vimrc</a></p><blockquote><p>There are tons of tutorials such as this one on the internet that contain all kinds of awesome hacks to make your Vim better, but the absolute worst way to make your environment better is to just copy it wholesale from others. </p></blockquote><p>5、<a href="https://github.com/wklken/vim-for-server" target="_blank" rel="noopener">vim-for-server</a></p><blockquote><p>一个规范带注释的.vimrc文件</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="hexo简单命令"><a href="#hexo简单命令" class="headerlink" title="hexo简单命令"></a>hexo简单命令</h1><p>由于不经常更新博客，所以经常忘记hexo相关命令，所以将一些简单命令记录到这里，方便查阅。</p><p>…算了，懒得抄。<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">hexo官方文档</a></p>]]></content>
       
       
       
@@ -294,6 +294,31 @@
     
     
     <entry>
+      <title>(01 day)二进制求和(Binary Sum)</title>
+      <link href="/2020/06/25/01-day-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C-Binary-Sum/"/>
+      <url>/2020/06/25/01-day-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C-Binary-Sum/</url>
+      
+        <content type="html"><![CDATA[<h1 id="01-day-二进制求和-Binary-Sum"><a href="#01-day-二进制求和-Binary-Sum" class="headerlink" title="(01 day)二进制求和(Binary Sum)"></a>(01 day)二进制求和(Binary Sum)</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;给你两个二进制字符串，返回它们的和（用二进制表示）。<br>输入为 非空 字符串且只包含数字 1 和 0</p><p>示例：  </p><pre><code class="c">input: a = &quot;11&quot;, b = &quot;1&quot;</code></pre><pre><code class="c">output: &quot;100&quot;</code></pre><p>&emsp; 首先想到的是字符串-&gt;十进制数-&gt;求和-&gt;二进制数。但是想到可能使用整数精度不够（对于转换的函数调用也不是很熟练），所以就使用了适合于长度较大的字符串相加计算的方法。类似于大数相加。</p><p>&ensp;11<br>&ensp;&ensp;1<br>——<br>100</p><pre><code class="c">#include &lt;stdio.h&gt;#include &lt;string.h&gt;#include &lt;malloc.h&gt;//char res[100];char* addBinary(char* a, char* b);int main(){    char a[100], b[100];    scanf(&quot;%s %s&quot;, a, b);    printf(&quot;%s&quot;, addBinary(a, b));    return 0;}void reserve(char* a){    int len = strlen(a);    for (int i = 0; i &lt; len / 2; i++)    {        char t;        t = a[i];        a[i] = a[len - 1 - i];        a[len - 1 - i] = t;    }}char* addBinary(char* a, char* b){    char* res;    //char res[100];    int temp = 0, add = 0, carry = 0;    res = (char*)malloc(sizeof(char) * 100);    if (strlen(a) &lt; strlen(b)) //保证函数中a的位数大或等于b    {        return addBinary(b, a);    }    reserve(a);//a，b字符反转    reserve(b);    for (int i = 0; i &lt; strlen(a); i++)    {        if (i &lt; strlen(b))//处理ab相加        {            add = carry + a[i] + b[i] - 2 * &#39;0&#39;; //进位和a[i],b[i]相加        }        else//处理a与进位相加        {            add = carry + a[i] - &#39;0&#39;;        }        temp = add % 2;        carry = add / 2;//进位        res[i] = temp + &#39;0&#39;;    }    if (carry==1)    {        res[strlen(a)] = &#39;1&#39;;        res[strlen(a)+1] = &#39;\0&#39;;    }    else    {        res[strlen(a)] = &#39;\0&#39;;    }    reserve(res);    return res;}</code></pre><h2 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h2><p>时间复杂度：只遍历了a，b数组一遍。<em>n = max{ |a|   , |b| }</em></p><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>利用Java和python自带的高精度方法就可以进行直接运算，不过Java中：</p><ul><li>字符超过32位不能使用 Integer</li><li>字符超过65位不能使用 Long</li><li>超过500000001位不能使用BigInteger  </li></ul><p><code>Java</code></p><pre><code class="java">class Solution {    public String addBinary(String a, String b) {        return Integer.toBinaryString(            Integer.parseInt(a, 2) + Integer.parseInt(b, 2)        );    }}</code></pre><p><code>Python</code></p><pre><code class="python">class Solution:    def addBinary(self, a, b) -&gt; str:        return &#39;{0:b}&#39;.format(int(a, 2) + int(b, 2))</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> LeetCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> easy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>删除有序数组中的重复项(Remove Duplicates from Sorted Array)</title>
       <link href="/2020/06/25/05-day-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9-Remove-Duplicates-from-Sorted-Array/"/>
       <url>/2020/06/25/05-day-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9-Remove-Duplicates-from-Sorted-Array/</url>
@@ -313,31 +338,6 @@
             <tag> easy </tag>
             
             <tag> 数组 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>(01 day)二进制求和(Binary Sum)</title>
-      <link href="/2020/06/25/01-day-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C-Binary-Sum/"/>
-      <url>/2020/06/25/01-day-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C-Binary-Sum/</url>
-      
-        <content type="html"><![CDATA[<h1 id="01-day-二进制求和-Binary-Sum"><a href="#01-day-二进制求和-Binary-Sum" class="headerlink" title="(01 day)二进制求和(Binary Sum)"></a>(01 day)二进制求和(Binary Sum)</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;给你两个二进制字符串，返回它们的和（用二进制表示）。<br>输入为 非空 字符串且只包含数字 1 和 0</p><p>示例：  </p><pre><code class="c">input: a = &quot;11&quot;, b = &quot;1&quot;</code></pre><pre><code class="c">output: &quot;100&quot;</code></pre><p>&emsp; 首先想到的是字符串-&gt;十进制数-&gt;求和-&gt;二进制数。但是想到可能使用整数精度不够（对于转换的函数调用也不是很熟练），所以就使用了适合于长度较大的字符串相加计算的方法。类似于大数相加。</p><p>&ensp;11<br>&ensp;&ensp;1<br>——<br>100</p><pre><code class="c">#include &lt;stdio.h&gt;#include &lt;string.h&gt;#include &lt;malloc.h&gt;//char res[100];char* addBinary(char* a, char* b);int main(){    char a[100], b[100];    scanf(&quot;%s %s&quot;, a, b);    printf(&quot;%s&quot;, addBinary(a, b));    return 0;}void reserve(char* a){    int len = strlen(a);    for (int i = 0; i &lt; len / 2; i++)    {        char t;        t = a[i];        a[i] = a[len - 1 - i];        a[len - 1 - i] = t;    }}char* addBinary(char* a, char* b){    char* res;    //char res[100];    int temp = 0, add = 0, carry = 0;    res = (char*)malloc(sizeof(char) * 100);    if (strlen(a) &lt; strlen(b)) //保证函数中a的位数大或等于b    {        return addBinary(b, a);    }    reserve(a);//a，b字符反转    reserve(b);    for (int i = 0; i &lt; strlen(a); i++)    {        if (i &lt; strlen(b))//处理ab相加        {            add = carry + a[i] + b[i] - 2 * &#39;0&#39;; //进位和a[i],b[i]相加        }        else//处理a与进位相加        {            add = carry + a[i] - &#39;0&#39;;        }        temp = add % 2;        carry = add / 2;//进位        res[i] = temp + &#39;0&#39;;    }    if (carry==1)    {        res[strlen(a)] = &#39;1&#39;;        res[strlen(a)+1] = &#39;\0&#39;;    }    else    {        res[strlen(a)] = &#39;\0&#39;;    }    reserve(res);    return res;}</code></pre><h2 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h2><p>时间复杂度：只遍历了a，b数组一遍。<em>n = max{ |a|   , |b| }</em></p><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>利用Java和python自带的高精度方法就可以进行直接运算，不过Java中：</p><ul><li>字符超过32位不能使用 Integer</li><li>字符超过65位不能使用 Long</li><li>超过500000001位不能使用BigInteger  </li></ul><p><code>Java</code></p><pre><code class="java">class Solution {    public String addBinary(String a, String b) {        return Integer.toBinaryString(            Integer.parseInt(a, 2) + Integer.parseInt(b, 2)        );    }}</code></pre><p><code>Python</code></p><pre><code class="python">class Solution:    def addBinary(self, a, b) -&gt; str:        return &#39;{0:b}&#39;.format(int(a, 2) + int(b, 2))</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> LeetCode </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> easy </tag>
             
         </tags>
       
